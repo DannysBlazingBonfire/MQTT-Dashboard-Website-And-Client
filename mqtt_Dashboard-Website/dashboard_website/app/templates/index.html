@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/dashboard_logic.js"></script>
+    <link rel="stylesheet" href="/static/dashboard_style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div id='Dashboard-title'>
+        <h1>Welcome to the Dashboard</h1>
+    </div>
+
+    <div class="RowContainer">
+        <div id='PiStatsBoard'>
+            <h2 class="DeviceTitle"> Raspberry Pi stats </h2>
+            <div class='DeviceImage' style="background-image: url('https://se.farnell.com/productimages/large/en_GB/2525225-40.jpg')"></div>
+            <p id='BrokerConnection' type='text'>Broker Connection: </p>
+            <p id='pistats' type ='text'>Temp: <br> CPU Usage: <br> RAM Usage: </p>
+        </div>
+    
+        <div class='ActiveDevice'>
+                <h2 class="DeviceTitle">Active Device</h2>
+                <div class='DeviceImage' style="background-image: url('https://se.farnell.com/productimages/large/en_GB/3996082-40.jpg')"></div>
+                <p>Status: Offline</p>
+                <div class="button-container">
+                    <input type="button" onclick="updateLed('ON')" value="turn on">
+                    <input type="button" onclick="updateLed('OFF')" value="turn off">
+                </div>
+        </div>
+
+        <!-- List Element here -->
+    </div>
+    
+</body>
+</html>
