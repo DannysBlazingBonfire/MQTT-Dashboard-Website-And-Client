@@ -1,5 +1,5 @@
 # MQTT-Dashboard-Website-And-Client
-This is a project where I made a Webbased Dashboard meant to be used as a way to controll and monitor microcontrollers around the home and send them instructions through an MQTT-Broker.
+This is a project where I made a Webbased Dashboard meant to be used as a way to controll and monitor microcontrollers around the home and send them instructions through an MQTT-Broker. The Provided Example will controll an LED.
 In order to set this up you will need to do the following:
 
 Step 1: Setup your own MQTT-Broker (I used my own raspberry pi 3B)
